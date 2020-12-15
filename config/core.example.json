@@ -1,0 +1,45 @@
+{
+  "web": {
+    "host": "0.0.0.0",
+    "listen": 8080,
+    "ssl": {
+      "enabled": false,
+      "certificate": "",
+      "key": ""
+    }
+  },
+  "docker": {
+    "container": {
+      "user": 999
+    },
+    "network": {
+      "name": "controlpanel_nw"
+    },
+    "socket": "/var/run/docker.sock",
+    "autoupdate_images": true,
+    "timezone_path": "/etc/timezone",
+    "interface": "172.18.0.1"
+  },
+  "discord": {
+    "token": "",
+    "guildID": ""
+  },
+  "filesystem": {
+    "server_logs": "/tmp/controlpanel"
+  },
+  "sftp": {
+    "path": "/srv/daemon-data",
+    "ip": "0.0.0.0",
+    "port": 2022,
+    "keypair": {
+      "bits": 2048,
+      "e": 65537
+    }
+  },
+  "remote": {
+    "base": "https://panel.bluefoxhost.com"
+  },
+  "uploads": {
+    "size_limit": 1024
+  }
+}
