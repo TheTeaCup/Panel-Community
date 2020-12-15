@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 global.bot = new Discord.Client();
 
 try {
-    client.login()
+    bot.login()
 } catch (e) {
     // log err
 }
